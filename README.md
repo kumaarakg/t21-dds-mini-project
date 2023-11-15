@@ -102,29 +102,29 @@ authenticator designed by IBM or Intuit.
 </details>
 <details>
   <summary>brief explanation</summary>
-  1. Shift Registers:
+  1  . Shift Registers:
 
     Storage: Shift registers are used to store the binary representation of the password digits. Each shift register stage represents one digit.
     Sequential Access: Data in the shift registers can be sequentially accessed or shifted.
 
-2. Logic Gates and Combinational Logic:
+  2  . Logic Gates and Combinational Logic:
 
     Comparator Logic: Combinational logic circuits are used to compare the entered combination with the stored password in the shift registers.
     Output Control: The output of the combinational logic determines whether the entered combination is correct or not.
 
-3. Input Interface:
+  3. Input Interface:
 
     Keypad or Input Device: Allows users to input their combination.
     Input Handling: Logic circuits manage the input and trigger the necessary operations.
 
-4. Password Reset Mechanism:
+  4. Password Reset Mechanism:
 
     Reset Trigger: There might be a dedicated button or sequence of inputs to initiate a password reset.
     Reset Logic: Combinational logic circuits handle the reset process without the need for a microcontroller.
         Clearing the existing password from the shift registers.
         Allowing the user to set a new password.
 
-5. Output Display:
+  5. Output Display:
 
     LEDs or Display: Provides visual feedback on the status of the lock (e.g., locked, unlocked, password reset mode).
 
