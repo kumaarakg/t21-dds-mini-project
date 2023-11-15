@@ -1,11 +1,9 @@
 # t21-dds-mini-project
 <details>
   <summary>team members</summary>
-  1. 221CS133, kumaara ganapathi n, kumaaraganapathin.221cs133@nitk.edu.in,
-9008524825
-2. 221CS152, Shishir Ashok, shishirashok.221cs152@nitk.edu.in, 9611438106
-3. 221CS158, tarun tamanda kumar, tamadatarunkumar.221cs158@nitk.edu.in,
-7997845470
+  1. 221CS133, kumaara ganapathi n, kumaaraganapathin.221cs133@nitk.edu.in,9008524825
+  2. 221CS152, Shishir Ashok, shishirashok.221cs152@nitk.edu.in, 9611438106
+  3. 221CS158, tarun tamanda kumar, tamadatarunkumar.221cs158@nitk.edu.in,7997845470
 </details>
 
 <details>
