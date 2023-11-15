@@ -112,7 +112,7 @@ authenticator designed by IBM or Intuit.
 <!-- Fifth Section -->
 ## Verilog Code
 <details>
-  <summary>Detail</summary>
+  <summary>main.v</summary>
 
  ````
 module fourbitcomparator(a,b,eq1);
