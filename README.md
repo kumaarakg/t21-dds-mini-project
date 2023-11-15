@@ -106,7 +106,7 @@ authenticator designed by IBM or Intuit.
 <details>
   <summary>Detail</summary>
 
-  > Update a neat logisim circuit diagram
+  ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/circuit%20diagram.png)
 </details>
 
 <!-- Fifth Section -->
