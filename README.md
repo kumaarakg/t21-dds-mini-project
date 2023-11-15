@@ -114,8 +114,8 @@ authenticator designed by IBM or Intuit.
 <details>
   <summary>Detail</summary>
 
-    ````
-    module fourbitcomparator(a,b,eq1);
+ ````
+module fourbitcomparator(a,b,eq1);
     input [3:0]a,b;
     output eq1;
     wire w1,w2,w3,w4,w5,w6;
@@ -197,7 +197,7 @@ module lock(a1,a2,a3,a4,locki);
 
 
 
-    ````
+ ````
 </details>
 
 
