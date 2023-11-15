@@ -96,9 +96,9 @@ authenticator designed by IBM or Intuit.
 <!-- Third Section -->
 ## Working
 <details>
-  <summary>Detail</summary>
+  <summary>functional table</summary>
 
-  > Explain the working of your model with the help of a functional table (compulsory) followed by the flowchart.
+   ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/functional_table.png)
 </details>
 
 <!-- Fourth Section -->
