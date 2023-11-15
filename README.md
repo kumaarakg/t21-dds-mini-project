@@ -1,14 +1,27 @@
-# t21-dds-mini-project
+Digital Combination lock
+
+<!-- First Section -->
+## Team Details
 <details>
-  <summary>team members</summary>
-  1. 221CS133, kumaara ganapathi n, kumaaraganapathin.221cs133@nitk.edu.in,9008524825
-  2. 221CS152, Shishir Ashok, shishirashok.221cs152@nitk.edu.in, 9611438106
-  3. 221CS158, tarun tamanda kumar, tamadatarunkumar.221cs158@nitk.edu.in,7997845470
+  <summary>Detail</summary>
+
+  > Semester: 3rd Sem B. Tech. CSE
+
+  > Section: S1
+
+  > Member-1: kumaara ganapathi n, 221cs133, kumaaraganapathin@nitk.edu.in
+
+  > member-2: shishir ashok, 221cs152, shishirashok.221cs152@nitk.edu.in
+
+  > Member-3: tarun tamanda kumar, 221cs158, tamadatarunkumar.221cs158@nitk.edu.in
 </details>
 
+<!-- Second Section -->
+## Abstract
 <details>
-  <summary>abstract</summary>
-  Background and Motivation:
+  <summary>Detail</summary>
+  
+Background and Motivation:
 The increasing rate of crime, attacks by thieves, intruders, and vandals,
 despite all forms of security gadgets and locks still need the attention of
 researchers to find a permanent solution to the well-being of lives and
@@ -44,7 +57,8 @@ encoder as we initially came up with complex designs that weren’t feasible.
 Then the next hurdle was how to implement this using one number pad,
 with a little help from the ever-helpful lab assistants of NITK, we were able
 to cross this hurdle too.
-Here are some key features of our project1. Decimal-to-Binary Conversion: The heart of our Digital Combination Lock
+Here are some key features of our project-
+1. Decimal-to-Binary Conversion: The heart of our Digital Combination Lock
 lies in its use of encoders, which expertly convert decimal inputs into binary.
 This transformation is a critical aspect of its operation, ensuring secure and
 precise communication between the user and the system.
@@ -76,124 +90,32 @@ industrial facilities where a high level of security is required.
 expansion in mind. It can be integrated with additional security features or
 connected to a broader security network for comprehensive protection.it
 can be easily converted to a satellite based opt locking similar to that of an
-authenticator designed by IBM or intuit.
-
+authenticator designed by IBM or Intuit.
 </details>
+
+<!-- Third Section -->
+## Working
 <details>
-  <summary>functional table</summary>
-  ![image](https://github.com/kumaarakg/t21-dds-mini-project/assets/121333258/ead84fb7-29a4-49f3-acca-bca9ad3cc4f4)
+  <summary>Detail</summary>
 
+  > Explain the working of your model with the help of a functional table (compulsory) followed by the flowchart.
 </details>
+
+<!-- Fourth Section -->
+## Logisim Circuit Diagram
 <details>
-  <summary>logisim circuit diagram</summary>
-  ![image](https://github.com/kumaarakg/t21-dds-mini-project/assets/121333258/01eb83fd-e850-4c0b-805f-ef5371bade56)
+  <summary>Detail</summary>
 
+  > Update a neat logisim circuit diagram
 </details>
+
+<!-- Fifth Section -->
+## Verilog Code
 <details>
-  <summary>iverilog</summary>
-  <details>
-    <summary>main.v</summary>
-    module fourbitcomparator(a,b,eq1);
-    input [3:0]a,b;
-    output eq1;
-    wire w1,w2,w3,w4,w5,w6;
-    //Gate Level
-    xnor(w1,a[0],b[0]);
-    xnor(w2,a[1],b[1]);
-    xnor(w3,a[2],b[2]);
-    xnor(w4,a[3],b[3]);
-    and(w5,w1,w2);
-    and(w6,w3,w4);
-    and(eq1,w5,w6);
+  <summary>Detail</summary>
 
-
-endmodule
-
-module encoder(i,y);
-    input [9:0]i;
-    output [3:0]y;
-    
-    or o1(y[3],i[9],i[8]);
-    or o2(y[2],i[7],i[6],i[5],i[4]);
-    or o3(y[1],i[7],i[6],i[3],i[2]);
-    or o4(y[0],i[9],i[7],i[5],i[3],i[1]);
-endmodule
-
-
-
-
-
-
-
-
-module lock(a1,a2,a3,a4,locki);
-
-
-    
-    
-    input [9:0]a1;
-    input [9:0]a2;
-    input [9:0]a3;
-    input [9:0]a4;
-    output locki;
-
-
-    
-    
-    wire [3:0]digi1;
-    wire [3:0]digi2;
-    wire [3:0]digi3;
-    wire [3:0]digi4;
-    encoder o1(a1,digi1);
-    encoder o2(a2,digi2);
-    encoder o3(a3,digi3);
-    encoder o4(a4,digi4);
-    wire [3:0] pass1;
-    assign pass1=4'b0000;
-    
-    wire [3:0] pass2;
-    assign pass2=4'b1001;
-    
-    wire [3:0] pass3;
-    assign pass3=4'b0011;
-    
-    wire [3:0] pass4;
-    assign pass4=4'b0001;
-    wire temp1,temp2,temp3,temp4;
-    fourbitcomparator g1(pass1,digi1,temp1);
-    fourbitcomparator g2(pass2,digi2,temp2);
-    fourbitcomparator g3(pass3,digi3,temp3);
-    fourbitcomparator g4(pass4,digi4,temp4);
-    and g5(locki,temp1,temp2,temp3,temp4);
-    endmodule
-
-
-
-    
-  </details>
-  <details>
-    <summary>main_tb.v</summary>
-    module tb;
-    reg [9:0]a1;
-    reg [9:0]a2;
-    reg [9:0]a3;
-    reg [9:0]a4;
-    wire locki;
-    lock dut(a1,a2,a3,a4,locki);
-    initial
-        begin
-        $display("1-correct password 0-wrong password");
-        $monitor("a1=%b a2=%b a3=%b a4=%b locki=%b",a1,a2,a3,a4,locki);
-        a1=1; a2=512; a3=8; a4=2; #5
-        a1=256; a2=256; a3=1; a4=8; #5
-        a1=512; a2=1; a3=2; a4=128; #5
-        a1=256; a2=2; a3=1; a4=64; #5
-        a1=256; a2=36; a3=512; a4=36; #5
-        $finish;
-        end
-    endmodule
-
-
-  </details>
-  
+  > Neatly update the Verilog code in code style only.
 </details>
+
+
+
