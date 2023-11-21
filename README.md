@@ -1,4 +1,4 @@
-Digital Combination lock
+##        Digital Combination lock
 
 <!-- First Section -->
 ## Team Details
