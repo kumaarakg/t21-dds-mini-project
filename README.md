@@ -147,7 +147,7 @@ authenticator designed by IBM or Intuit.
 <details>
   <summary>Detail</summary>
 
-  ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/circuit%20diagram.png)
+  ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/snapshots/circuit%20diagram.png)
 </details>
 
 <!-- Fifth Section -->
