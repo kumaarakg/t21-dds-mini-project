@@ -1,4 +1,4 @@
-#Digital Combination lock
+# Digital Combination lock
 
 <!-- First Section -->
 ## Team Details
@@ -24,7 +24,7 @@
 In response to the escalating rates of crime and security breaches, our open-source project addresses the need for an affordable and effective security solution. We propose a Digital Combination Lock system utilizing shift registers, LEDs, and logic gates for buildings, cars, safes, doors, and gates. The project focuses on cost-effectiveness, employing decimal-to-binary conversion, enhanced security measures, user-friendly interfaces, and customizable combinations. Despite initial challenges, our project aims to revolutionize personal security, offering a robust and reliable solution with potential applications in various sectors
 
   
-###Background and Motivation:
+### Background and Motivation:
 The increasing rate of crime, attacks by thieves, intruders, and vandals,
 despite all forms of security gadgets and locks still need the attention of
 researchers to find a permanent solution to the well-being of lives and
@@ -43,7 +43,7 @@ on during the hardware implementation.
 As mentioned our main goal is to make a cost-effective security system. Our
 primary motive is to considerably lower the cost of personal security and
 privacy by effectively implementing logic gates and digital systems.
-###BRIEF DESCRIPTON:
+### BRIEF DESCRIPTON:
 As mentioned previously, our primary aim for this project was to create a
 cheap and effective lock. To achieve this motive, we started researching
 various pre-existing designs. We discovered many projects, ranging from
