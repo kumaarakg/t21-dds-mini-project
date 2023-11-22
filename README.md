@@ -25,7 +25,57 @@
 In response to the escalating rates of crime and security breaches, our open-source project addresses the need for an affordable and effective security solution. We propose a Digital Combination Lock system utilizing shift registers, LEDs, and logic gates for buildings, cars, safes, doors, and gates. The project focuses on cost-effectiveness, employing decimal-to-binary conversion, enhanced security measures, user-friendly interfaces, and customizable combinations. Despite initial challenges, our project aims to revolutionize personal security, offering a robust and reliable solution with potential applications in various sectors
 
   
-### Background and Motivation:
+
+</details>
+
+<!-- Third Section -->
+## Working
+<details>
+  <summary>functional table</summary>
+
+   ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/snapshots/functional_table.png)
+</details>
+<details>
+  <summary>brief explanation</summary>
+  1  . Shift Registers:
+
+    Storage: Shift registers are used to store the binary representation of the password digits. Each shift register stage represents one digit.
+    Sequential Access: Data in the shift registers can be sequentially accessed or shifted.
+
+  2  . Logic Gates and Combinational Logic:
+
+    Comparator Logic: Combinational logic circuits are used to compare the entered combination with the stored password in the shift registers.
+    Output Control: The output of the combinational logic determines whether the entered combination is correct or not.
+
+  3. Input Interface:
+
+    Keypad or Input Device: Allows users to input their combination.
+    Input Handling: Logic circuits manage the input and trigger the necessary operations.
+
+  4. Password Reset Mechanism:
+
+    Reset Trigger: There might be a dedicated button or sequence of inputs to initiate a password reset.
+    Reset Logic: Combinational logic circuits handle the reset process without the need for a microcontroller.
+        Clearing the existing password from the shift registers.
+        Allowing the user to set a new password.
+
+  5. Output Display:
+
+    LEDs or Display: Provides visual feedback on the status of the lock (e.g., locked, unlocked, password reset mode).
+
+6. Power Supply:
+
+    Stable Power: The system requires a stable power supply for proper operation.
+
+7. Security Considerations:
+
+    Encryption and Security Measures: Depending on the complexity of the project, additional security measures might be implemented to protect against unauthorized access.
+
+8. Additional Components:
+
+    Clock Source: Provides the clock signal for the shift registers' sequential operation.
+    Latch Mechanism: Holds the output of the shift registers at the right time for comparison.
+   ### Background and Motivation:
 The increasing rate of crime, attacks by thieves, intruders, and vandals,
 despite all forms of security gadgets and locks still need the attention of
 researchers to find a permanent solution to the well-being of lives and
@@ -95,55 +145,6 @@ expansion in mind. It can be integrated with additional security features or
 connected to a broader security network for comprehensive protection.it
 can be easily converted to a satellite based opt locking similar to that of an
 authenticator designed by IBM or Intuit.
-</details>
-
-<!-- Third Section -->
-## Working
-<details>
-  <summary>functional table</summary>
-
-   ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/snapshots/functional_table.png)
-</details>
-<details>
-  <summary>brief explanation</summary>
-  1  . Shift Registers:
-
-    Storage: Shift registers are used to store the binary representation of the password digits. Each shift register stage represents one digit.
-    Sequential Access: Data in the shift registers can be sequentially accessed or shifted.
-
-  2  . Logic Gates and Combinational Logic:
-
-    Comparator Logic: Combinational logic circuits are used to compare the entered combination with the stored password in the shift registers.
-    Output Control: The output of the combinational logic determines whether the entered combination is correct or not.
-
-  3. Input Interface:
-
-    Keypad or Input Device: Allows users to input their combination.
-    Input Handling: Logic circuits manage the input and trigger the necessary operations.
-
-  4. Password Reset Mechanism:
-
-    Reset Trigger: There might be a dedicated button or sequence of inputs to initiate a password reset.
-    Reset Logic: Combinational logic circuits handle the reset process without the need for a microcontroller.
-        Clearing the existing password from the shift registers.
-        Allowing the user to set a new password.
-
-  5. Output Display:
-
-    LEDs or Display: Provides visual feedback on the status of the lock (e.g., locked, unlocked, password reset mode).
-
-6. Power Supply:
-
-    Stable Power: The system requires a stable power supply for proper operation.
-
-7. Security Considerations:
-
-    Encryption and Security Measures: Depending on the complexity of the project, additional security measures might be implemented to protect against unauthorized access.
-
-8. Additional Components:
-
-    Clock Source: Provides the clock signal for the shift registers' sequential operation.
-    Latch Mechanism: Holds the output of the shift registers at the right time for comparison.
 </details>
 
 <!-- Fourth Section -->
