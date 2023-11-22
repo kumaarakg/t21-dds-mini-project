@@ -98,7 +98,7 @@ authenticator designed by IBM or Intuit.
 <details>
   <summary>functional table</summary>
 
-   ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/functional_table.png)
+   ![image](https://github.com/kumaarakg/t21-dds-mini-project/blob/main/snapshots/functional_table.png)
 </details>
 <details>
   <summary>brief explanation</summary>
